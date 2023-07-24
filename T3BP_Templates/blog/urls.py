@@ -7,4 +7,6 @@ urlpatterns = [
 
     path('about/', views.about, name="blog-about"), #this is for "something.com/blog/about" 
 
+    path('abouttemp/', views.abouttemp, name="blog-abouttemp"),
+
 ]

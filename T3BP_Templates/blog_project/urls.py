@@ -19,6 +19,8 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog', include('blog.urls')),  # this inclusion of blog.urls is  responsible for bridge b/w our parent project and its sub-level apps. 
+    path('blog/', include('blog.urls')),
+    path('', include('landing_page.urls')),
+      # this inclusion of blog.urls is  responsible for bridge b/w our parent project and its sub-level apps. 
     #when we'll go the something.com/blog, it will map that to "urls.py" file in "blog" APP that we created and then the empty in path in "urls.py" file in blog app will open the blog app
 ]
