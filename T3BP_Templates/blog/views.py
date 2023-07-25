@@ -11,14 +11,35 @@ from django.shortcuts import render
 # def about(request):
 #     return HttpResponse("<h1>About Page</h1>")
 
-def home(request):
-    return render(request,'blog/home.html')
-    # this will redirect to home.html file after searching for templates folder automatically
+posts = [ 
+    {
+        'author':'CoreyMS',
+        'title':'Blog Post 1',
+        'content':'First post content',
+        'date posted' : 'July 24, 2023'
+    },
+    {
+        'author': 'Rohan',
+        'title': 'Blog Post 2',
+        'content': 'Second post content',
+        'date posted': 'July 25, 2023'
+    }
+]
+
+#we can pass this 'posts' in our template
+
+
+
+# this will redirect to home.html file after searching for templates folder automatically
     # it goes like app->templates->appname->templates.html
+def home(request):
+    context = {
+        'posts': posts  
+    }
+    return render(request,'blog/home.html', context)
 
 def about(request):
     return HttpResponse("<h1>about blog page</h1>")
-    #this will just print "about page"
 
 def abouttemp(request):
     return render(request, 'blog/about.html')
