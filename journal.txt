@@ -1,0 +1,1 @@
+Day 5: learned about rendering templates and the structure of django to write code in html templates.
