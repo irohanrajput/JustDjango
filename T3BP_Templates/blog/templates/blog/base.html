@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% if title %}
+        <title>Django Blog - {{ title }} </title>
+    {% else %}        
+        <title>Django Blog </title>
+    {% endif %}
+
+{% comment %}   this is to indicate where we are currently on the webside, (shows in the title) {% endcomment %}
+</head>
+<body>
+    {% block content %} {% endblock content %}
+</body>
+</html>

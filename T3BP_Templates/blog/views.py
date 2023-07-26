@@ -16,17 +16,18 @@ posts = [
         'author':'CoreyMS',
         'title':'Blog Post 1',
         'content':'First post content',
-        'date posted' : 'July 24, 2023'
+        'date_posted' : 'July 24, 2023'
     },
     {
         'author': 'Rohan',
         'title': 'Blog Post 2',
         'content': 'Second post content',
-        'date posted': 'July 25, 2023'
+        'date_posted': 'July 25, 2023'
     }
 ]
 
 #we can pass this 'posts' in our template
+# https://youtu.be/qDwdMDQ8oX4?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&t=1079
 
 
 
@@ -34,12 +35,12 @@ posts = [
     # it goes like app->templates->appname->templates.html
 def home(request):
     context = {
-        'posts': posts  
+        'posts': posts, 
     }
     return render(request,'blog/home.html', context)
 
 def about(request):
-    return HttpResponse("<h1>about blog page</h1>")
-
-def abouttemp(request):
-    return render(request, 'blog/about.html')
+    context = {
+        'title': 'About'
+    }
+    return render(request, 'blog/about.html', context)
