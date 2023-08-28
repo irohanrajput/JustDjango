@@ -1,0 +1,10 @@
+learned about adding static files,
+2. learned about how to use name tags that we gave to all the urls before.
+
+example:
+
+ <a class="nav-item nav-link" href="{% url 'blog-home' %} ">Home</a>
+
+3. got more practice on using templates inheritance
+
+that's it
