@@ -1,8 +1,0 @@
-finally learned about templates, template inheritance, context 
-got familier with django.
-understood concepts like views, urls etc
-
-all good.
-
-I'll be creating a new repo to take this project further as I want to keep my learnings untill now separate.
-
