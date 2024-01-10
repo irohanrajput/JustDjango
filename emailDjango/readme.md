@@ -1,0 +1,1 @@
+a simple form I created while learning SMTP, for handeling emails and all that stuff.
