@@ -1,2 +1,3 @@
 Day 5: learned about rendering templates and the structure of django to write code in html templates.
 Day 6: learned about template inheritance, "context" that passes data to wherever it is needed, and title behaviour. 
+110123: SMTP, handling email services
