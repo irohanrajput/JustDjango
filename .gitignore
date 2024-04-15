@@ -1,1 +1,4 @@
-whatever_django/
+__pycache__/
+.venv/
+.idea/
+dbsqlite3
